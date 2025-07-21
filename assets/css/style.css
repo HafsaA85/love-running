@@ -188,6 +188,16 @@ main{
     color: #fafafa;
 }
 
+/*gallery inames*/
+#photos images{
+  width: 100%;
+  line-height: 1em;
+}
+
+#photos{
+  line-height: 0;
+}
+
 
 /*footer*/
 #social-networks{
