@@ -19,6 +19,13 @@ body {
     color: #3a3a3a;
 }
 
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;  
+  font-family: 'Oswald', sans-serif;    
+    }
+
 /*Header*/
 header{
     background-color: #ffffff;
@@ -31,16 +38,13 @@ header{
     justify-content: space-between;
     align-items: baseline;
 }
+
+
 header a{
   text-decoration: none;
   color: inherit;
 }
-h1{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;  
-  font-family: 'Oswald', sans-serif;    
-    }
+
 
    #menu {
     font-size: 110%;
@@ -90,6 +94,24 @@ main{
   width: 600px ;
   height: 100%;
   background-color: url(../images/hero-image.webp) no-repeat center center/cover;
+  position: relative;
+}
+
+#cover-text{
+  /*final rgba so that we can set the opacity to semi-transparent*/
+  background-color: rgba(241, 109, 107, .7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding: 40px;
+  padding-left: 10px;
+
+}
+
+#cover-text > h2, #cover-text > h3{
+  color: #ffffff;
 }
 
 /*footer*/
@@ -142,6 +164,12 @@ main{
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
+    }
+
+    /*hero*/
+    #cover-text{
+      width: 100px;
+      right: 50px;
     }
 }
 
